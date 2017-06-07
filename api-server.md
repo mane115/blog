@@ -72,7 +72,8 @@ op4=>operation:解析返回的数据格式，生成接口数据格式
 op5=>operation:新增数据实体:response
 op6=>operation:返回接口详情
 st->op1->op2->op3->cond1
-cond(yes)->op4->op5->op6->ed
-cond(no)->op6->ed
+cond1(yes)->op4->op5->op6
+cond1(no)->op6
+op6->ed
 ```
 	
