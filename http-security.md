@@ -25,7 +25,7 @@
     
 # OAuth
   
-  * #### jwt生成的token如何刷新
+  * #### jwt生成的token如何刷新
    
   ```
              client   -----------------------   server
