@@ -22,7 +22,19 @@
     比较密码时，不能泄露任何信息，因此比较必须在固定时间完成。
     
     如果不控制比对时间，攻击者可以通过比较的时间长短来判断密码的正确性。
-    
+    
+# OAuth
+  
+  * #### jwt生成的token如何刷新
+   
+  ```
+             client   -----------------------   server
+            jwt token            -->         token alive ? 
+            api info             <--         normal alive 
+  api info & new token(headers)  <--     alive & expire < {time}
+             error               <--      expired | not record
+  ```  
+  
 # 参考
 
 [Node.js面试题之2017](https://cnodejs.org/topic/58eb64293145ae3f25fe614c)
