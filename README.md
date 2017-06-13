@@ -4,4 +4,4 @@
 
 * [http安全](https://github.com/mane115/blog--/blob/master/http-security.md) 2017-06-13
 
-* [基于typescript的oo学习](https://github.com/mane115/blog/blob/master/oo.md)
+* [基于typescript的oo学习](https://github.com/mane115/blog/blob/master/oo.md) 2017-06-14
