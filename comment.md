@@ -12,7 +12,15 @@
   
 * ### 用户模块
 
-    评论中心不设计用户模块，client所有用户信息由jwt token 形式，具体加密形式可产考以下nodejs代码：
+	评论中心不设计用户模块，client所有用户信息由jwt token 形式，必要的用户信息如下:
+    
+	|key|type|desc|
+	|:--|:--|:--|
+	|id|String|用户id
+	|name|String|用户名
+	|avatar|String|用户头像
+  
+    具体加密形式可产考以下nodejs代码：
     
 ```javascript
     
