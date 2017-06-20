@@ -12,7 +12,22 @@
   
 * ### 用户模块
 
-    评论中心不设计用户模块，client所有用户信息由jwt token 形式
+    评论中心不设计用户模块，client所有用户信息由jwt token 形式，具体加密形式可产考以下nodejs代码：
+    
+```javascript
+    
+    const jwt = require('jsonwebtoken'),
+          client_id = 'client_id',
+          client_secret = 'client_secret';
+    let userInfo = {
+        id: 'user_id',
+        name: 'name',
+        avatar: 'https://static.abc.com/user/abc'
+    };
+    let secret = `${client_id}|${client_secret}`; // client_id|client_secret
+    let token = jwt.sign(userInfo,secret);
+    
+```
 
 * ### 评论模块
   
@@ -20,13 +35,13 @@
   
     * 发表评论 (图/文)
   
-    * 发表评论 (图/文)
+	* 回复评论 (图/文)
     
     * 匿名评论 每用户一次（根据 client_id,thread_id,user_id唯一）
   
-    * 举报评论 每用户一次（根据 client_id,thread_id,user_id唯一）
+	* 举报评论 每用户一次（根据 client_id,thread_id,user_id唯一）
   
-  ~~* 删除评论 由于无用户系统，所以删除评论权限仅提供给client对应的管理员~~
+		~~删除评论 由于无用户系统，所以删除评论权限仅提供给client对应的管理员~~
 
 * ### 管理模块
   
