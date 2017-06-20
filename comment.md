@@ -20,9 +20,9 @@
   
     * 发表评论 (图/文)
   
-    * 回复评论 (图/文)
-  
-    * 匿名评论 每用户一次（根据 client_id,thread_id,user_id唯一）
+    * 发表评论 (图/文)
+    
+    * 匿名评论 每用户一次（根据 client_id,thread_id,user_id唯一）
   
     * 举报评论 每用户一次（根据 client_id,thread_id,user_id唯一）
   
