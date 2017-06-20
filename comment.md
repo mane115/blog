@@ -4,11 +4,14 @@
 
 * ### client模块
 
-  client（第三方）需要通过申请client_id 与 client_secret 来注册评论中心的服务，申请后通过调用api的请求的头部或尾部（query），让评论中心识别合法的请求.
-  client。
+  client（第三方）需要通过申请client_id 与 client_secret 来注册评论中心的服务，申请后通过调用api的请求的头部或尾部（query），让评论中心识别合法的请求。以下默认称第三方为的client。
   
-  * 增加client
+  * 增加client
 
+  * 增加client管理员
+  
+  * 修改client管理员
+  
 * ### 用户模块
 
   评论中心不设计用户模块，client所有用户信息由jwt token 形式
@@ -21,4 +24,5 @@
   
   * 回复评论（根据 client_id,thread_id,user_id,comment_id唯一）
   
-  * 删除评论 由于无用户系统，所以删除评论权限仅提供给client(第三方)对应的管理员
+  ~~* 删除评论 由于无用户系统，所以删除评论权限仅提供给client对应的管理员~~
+
